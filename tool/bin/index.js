@@ -17,7 +17,7 @@ try {
 		console.log('Found configuration', pkg.tool);
 		// do something with the configuration
 	} else  {
-		conse.log(chalk.yellow('Could not find the configuration, using default');
+		conse.log(chalk.yellow('Could not find the configuration, using default'));
 		// get the default configuration
 	}
         console.log(chalk.bgCyanBright('starting the app'));
