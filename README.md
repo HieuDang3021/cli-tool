@@ -1,2 +1,2 @@
 # cli-tool
-Basic CLI tool for fun
+Basic CLI tool for fun:
