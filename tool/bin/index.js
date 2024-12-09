@@ -11,7 +11,7 @@ try {
     
     if (args['--start']) {
 	// get the package.json file in the installed user interface
-	const pkgPath = pkgU.sync({cwd: process.cwd()});
+	const pkgPath = pkgUp.sync({cwd: process.cwd()});
 	const pkg = require(pkgPath);
 	if (pkg.tool) {
 		console.log('Found configuration', pkg.tool);
