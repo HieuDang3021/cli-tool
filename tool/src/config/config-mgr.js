@@ -15,7 +15,8 @@ module.exports = function getConfig() {
 		const isValid = ajv.validate(schema, result.config);
 		if (!isValid) {
 			console.log(chalk.yellow('Invalid configuration provided!'));
-			console.log(ajv.errors);
+			console.log();
+			console.log(ajv.errors.map((error) =>`${error.instancePath}: ${error.message}`).join('\n'));
 			process.exit(1);
 		}
 		console.log('Found this configuration', result.config);
